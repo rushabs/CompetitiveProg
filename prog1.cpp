@@ -7,7 +7,7 @@ int solve(int i,int j)
 	int t,t1,t2;
 	if( i == n )
 		return 0;
-	if(visited[i][j] == 1)
+	if(visited[i][j] == 1)			//if visited[i][j]==1 return cache[i][j]
 		return cache[i][j];
 	t1 = solve(i+1,j);
 	t2 = solve(i+1,j+1);
